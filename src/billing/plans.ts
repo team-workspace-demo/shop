@@ -7,5 +7,5 @@ export type Plan = {
 // D-009: annual plans get two months free.
 export const PLANS: Plan[] = [
   { id: 'monthly', priceCents: 1_200, months: 1 },
-  { id: 'annual', priceCents: 12_000, months: 12 },
+  { id: 'annual', priceCents: 14_400, months: 12 },
 ];
