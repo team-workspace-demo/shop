@@ -16,3 +16,5 @@ explain. `.hub/` holds the role policies and prompts. No agent can change
 
 The bug: `findDiscount` looks codes up exactly as typed, but decision D-014
 says codes are case-insensitive. `summer20` fails, `SUMMER20` works.
+
+Sync check, 2026-11-27.
