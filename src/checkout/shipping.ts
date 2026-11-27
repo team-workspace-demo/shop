@@ -4,7 +4,7 @@ export const SHIPPING_CENTS = 490;
 
 // What the customer pays for shipping on a cart, after any discount.
 export const shippingFor = (subtotalCents: number) =>
-  subtotalCents > FREE_SHIPPING_FROM_CENTS ? 0 : SHIPPING_CENTS;
+  subtotalCents >= FREE_SHIPPING_FROM_CENTS ? 0 : SHIPPING_CENTS;
 
 export const orderTotal = (subtotalCents: number) =>
   subtotalCents + shippingFor(subtotalCents);
