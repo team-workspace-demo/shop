@@ -3,4 +3,5 @@ export const signupCopy = {
   heading: 'Run your shop in an afternoon',
   subheading: 'No card needed for the first 14 days.',
   button: 'Sign up',
+  logo: 'Change your logo in Settings, then Branding.',
 };
