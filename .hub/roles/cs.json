@@ -1,0 +1,13 @@
+{
+  "name": "cs",
+  "label": "Customer support",
+  "description": "Turns customer reports into reproduced bugs and proposed fixes.",
+  "systemPrompt": "prompts/cs.md",
+  "canCreate": ["bug"],
+  "write": {
+    "allow": ["src/**"],
+    "deny": ["src/auth/**", "src/billing/**", "infra/**", "package.json"]
+  },
+  "maxChangedLines": 80,
+  "approval": "dev"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "dev",
+  "label": "Developer",
+  "description": "Builds and reviews. Approves what other roles propose.",
+  "systemPrompt": "prompts/dev.md",
+  "canCreate": ["bug", "change"],
+  "write": { "allow": ["**"], "deny": ["infra/secrets/**"] },
+  "maxChangedLines": 400,
+  "approval": null
+}

@@ -1,0 +1,13 @@
+{
+  "name": "po",
+  "label": "Product owner",
+  "description": "Changes copy and UI, writes decisions, gets a preview to check.",
+  "systemPrompt": "prompts/po.md",
+  "canCreate": ["change"],
+  "write": {
+    "allow": ["src/web/**", "decisions/**", "docs/**"],
+    "deny": ["src/web/api/**"]
+  },
+  "maxChangedLines": 120,
+  "approval": "dev"
+}
