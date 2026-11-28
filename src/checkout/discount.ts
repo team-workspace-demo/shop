@@ -7,7 +7,7 @@ const CODES: Record<string, Discount> = {
 };
 
 export const findDiscount = (input: string, today: string): Discount | null => {
-  const discount = CODES[input.trim()];
+  const discount = CODES[input.trim().toUpperCase()];
   if (!discount || discount.expires < today) return null;
   return discount;
 };
